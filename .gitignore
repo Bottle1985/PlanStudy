@@ -1,2 +1,6 @@
 
 Document/~$uCauPhanMem.docx
+*.dll
+*.props
+*.pdb
+*.cache
