@@ -1,5 +1,3 @@
-using System;
-
 namespace WebDangKyMonHoc.Models
 {
     public class ErrorViewModel
