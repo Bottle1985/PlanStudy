@@ -36,6 +36,13 @@ button {
     background-color: #f44336;
 }
 
+/*Set style for login button*/
+.Login {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
 /* Center the avatar image inside this container */
 .imgcontainer {
     text-align: center;
