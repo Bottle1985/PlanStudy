@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebDangKyMonHoc.Models
 {
@@ -26,5 +31,16 @@ namespace WebDangKyMonHoc.Models
         {
             this.name = name;
         }
+        [Key, Column(Order = 1)]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int idUser { get; set; }
+
+        public string Username { get; set; }
+
+        public string Password { get; set; }
+
+        public int Lever { get; set; }
+
+
     }
 }
