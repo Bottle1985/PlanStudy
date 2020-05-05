@@ -9,41 +9,12 @@ namespace WebDangKyMonHoc.Models
 {
     public class Student
     {
-        private String rollNo;
-        private String name;
-        public int StudentID;
-        public String StudentName;
-        public int Age;
+        public int ID { get; set; }
+        public string LastName { get; set; }
+        public string FirstMidName { get; set; }
+        public DateTime EnrollmentDate { get; set; }
 
-        public String getRollNo()
-        {
-            return rollNo;
-        }
-
-        public void setRollNo(String rollNo)
-        {
-            this.rollNo = rollNo;
-        }
-
-        public String getName()
-        {
-            return name;
-        }
-
-        public void setName(String name)
-        {
-            this.name = name;
-        }
-        [Key, Column(Order = 1)]
-        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-        public int idUser { get; set; }
-
-        public string Username { get; set; }
-
-        public string Password { get; set; }
-
-        public int Lever { get; set; }
-
+        public virtual ICollection<Enrollment> Enrollments { get; set; }
 
     }
 }
