@@ -9,11 +9,11 @@ namespace WebDangKyMonHoc.Models
 {
     public class Entities : DbContext
     {
-        public Entities() : base("bottle.Student.dbo")
+        public Entities() : base("StudentManament")
         {
         }
         public DbSet<Student> Students { get; set; }
-
+        //Data Source = Bottle\; Initial Catalog = Student; Integrated Security = True; Pooling=False
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 

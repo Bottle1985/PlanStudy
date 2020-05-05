@@ -11,6 +11,9 @@ namespace WebDangKyMonHoc.Models
     {
         private String rollNo;
         private String name;
+        public int StudentID;
+        public String StudentName;
+        public int Age;
 
         public String getRollNo()
         {

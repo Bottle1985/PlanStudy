@@ -10,30 +10,31 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>@ViewBag.title</h2>
-                  
+                   
                     <table class="table table-bordered">
                         <p>Good good</p>
+                        @*<label>Total Students:</label>  @ViewBag.TotalStudents*@
                         @foreach (var user in ViewBag.users)
                         {
-                        <tr>
-                            <td>Good luck</td>
-                            <td>@user.UserName</td>
-                            <td>@user.Pass</td>
-                            <td>
-                                @{
-                                    if (user.Lever == 1)
-                                    {
-                                        <span class="badge badge-danger">Admin</span>
-                                    }
-                                    else
-                                    {
-                                        <span class="badge badge-warning">Member</span>
-                                    }
-                                }
-                            </td>
-                        </tr>
-
+                            <tr>
+                                <td>Good luck</td>
+                                <td>@user.UserName</td>
+                                <td>@user.Pass</td>
+                                @*<td>
+                    @{
+                        if (user.Lever == 1)
+                        {
+                            <span class="badge badge-danger">Admin</span>
+                        }
+                        else
+                        {
+                            <span class="badge badge-warning">Member</span>
+                        }
                     }
+                </td>*@
+                            </tr>
+                        }
+
                     </table>
                 </div>
             </div>
